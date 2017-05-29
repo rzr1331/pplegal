@@ -1,0 +1,115 @@
+
+
+
+/* -- 3. STRUCTURE -- */
+
+
+.utility_wrap
+{
+	position: relative;
+	width: 100%;
+	text-align: left;
+	margin: 0px auto;
+	background: #333 url(images/nav_bg_overlay.html) 0px 1px repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+
+
+
+/* -- 4. HEADER -- */
+
+
+
+/* Primary Menu */
+
+.nav1
+{
+    position: relative;
+    float: left;
+    min-width: 990px;
+    width: 100%;
+    list-style: none;
+    z-index: 1000;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    height: 30px;
+    background: #002054;
+}
+.nav1 li
+{ text-align:center;
+    float: left;
+    position: relative;
+    height: 30px;
+    padding-right: 0;
+}
+.nav1 a
+{
+    display: block;
+    color: White;/*main menu heading*/
+    text-decoration: none;
+    line-height: 14px;
+    padding: 6px 1% 6px 1%;
+    margin: .5% 0px .5% 0px; /*font-size: 13px;*/
+    font-size: 100%;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+    font-weight: normal;
+
+}
+.nav1 a:hover, .nav1 li.current-menu-item a, .nav1 li.current-menu-ancestor > a { color:#fff }
+.nav1 ul 
+{
+	
+    list-style: none;
+    position: absolute;
+    display: none;
+    top: 25px;
+    margin: 0px;
+    width: 250px; /*menu width;*/
+    z-index: 9999;
+}
+.nav1 ul li {
+    min-width: 220px;
+    height: auto;
+    text-align:left;
+	/*background-color:yellow; pup menu back color;*/
+}
+.nav1 ul li:last-child { border:none }
+.nav1 ul.sub-menu
+{
+	background: #333;
+	background: #0054DE; /*background-color:yellow; pup menu back color;*/
+	padding: 2%;
+	-webkit-box-shadow: 2px 2px 2px #5F5F5F;
+	-moz-box-shadow: 2px 2px 2px #5F5F5F;
+	box-shadow: 2px 2px 2px #5F5F5F;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	z-index: 9999;
+	
+}
+
+.nav1 ul.sub-menu a { display:block; margin:0px; padding:6px 5px; color:#ffffff; text-decoration:none; text-transform:none; font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal }
+.nav1 li:hover > a { color:#fff; background-color:#333; background-color:#0054DE; }
+.nav1 ul ul {
+    left: 220px;
+    top: -10px;
+}
+.nav1 ul li:hover > a { color:Gray; background-color:white; }
+.nav1 li:hover ul ul, .nav1 li:hover ul ul ul, .nav1 li:hover ul ul ul ul { display:none }
+.nav1 li:hover ul, .nav1 li li:hover ul, .nav1 li li li:hover ul, .nav1 li li li li:hover ul { display:block }
+.nav1 li.has_child > a
+{
+    
+    background-image: url(images/blue-arrow.html);
+    background-position: right -39px;
+    background-repeat: no-repeat;
+    border-right-style: solid;
+    border-right-width: 1pt;
+    border-right-color: #405767;
+}
+.nav1 ul li.arrow > a { background-image:url(r_img.html\arrow-right-double.gif); background-position: right 12px; background-repeat: no-repeat }
+
+
